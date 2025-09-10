@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const errorOutput = document.getElementById('errorOutput');
 
     // !!! 将此替换为你的 Cloudflare Worker 的 URL !!!
-    const workerApiUrl = 'https://my-gemini-proxy-worker.henrybus.workers.dev'; 
+    const workerApiUrl = 'https://*.henrybus.workers.dev'; 
 
     sendButton.addEventListener('click', async () => {
         const prompt = promptInput.value.trim();
@@ -46,3 +46,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
